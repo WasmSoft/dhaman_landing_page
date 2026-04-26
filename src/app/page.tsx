@@ -1,4 +1,5 @@
 import { FaqSection } from "@/components/faq";
+import { FooterSection } from "@/components/footer";
 import { HeroSection } from "@/components/hero";
 import { ProblemSection } from "@/components/problem";
 import { ScenarioSection } from "@/components/scenario";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <ScenarioSection />
       <SecuritySection />
       <FaqSection />
+      <FooterSection />
     </main>
   );
 }
