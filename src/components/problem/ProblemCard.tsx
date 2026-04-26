@@ -31,9 +31,9 @@ export function ProblemCard({ card }: ProblemCardProps) {
     >
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#6d5dfc]/20 to-transparent opacity-50 blur-xl" />
 
-      <div className="relative flex flex-col items-end gap-8 lg:flex-row lg:items-center">
-        <div className="order-2 flex min-w-0 flex-1 flex-col items-end gap-[7px] lg:order-1">
-          <span className="text-xs font-medium uppercase leading-3 tracking-[0.05em] text-[#928ea1]">
+      <div className="relative flex flex-col items-start gap-8 lg:flex-row lg:items-center">
+        <div className="order-2 flex min-w-0 flex-1 flex-col items-start gap-[7px] lg:order-1">
+          <span className="text-xs font-medium uppercase leading-3 tracking-wider text-[#928ea1]">
             مشكلة {card.number}
           </span>
 
