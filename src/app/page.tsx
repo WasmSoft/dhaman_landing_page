@@ -1,3 +1,4 @@
+import { FaqSection } from "@/components/faq";
 import { HeroSection } from "@/components/hero";
 import { ProblemSection } from "@/components/problem";
 import { ScenarioSection } from "@/components/scenario";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <SolutionSection />
       <ScenarioSection />
       <SecuritySection />
+      <FaqSection />
     </main>
   );
 }
