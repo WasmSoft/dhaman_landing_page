@@ -34,7 +34,7 @@ export function SolutionStepCard({ step }: SolutionStepCardProps) {
   return (
     <article
       className={cn(
-        "relative z-10 flex min-h-[218px] flex-col items-end gap-2 rounded-xl border bg-[#111426]/80 p-[33px] text-right shadow-[0_24px_60px_-34px_rgb(0_0_0_/_0.8)] backdrop-blur-md",
+        "relative z-10 flex min-h-[218px] flex-col items-start gap-2 rounded-xl border bg-[#111426]/80 p-[33px] text-right shadow-[0_24px_60px_-34px_rgb(0_0_0_/_0.8)] backdrop-blur-md",
         isAi
           ? "border-[#6d5dfc]/30 shadow-[#6d5dfc]/30"
           : isSuccess
