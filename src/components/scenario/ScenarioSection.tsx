@@ -36,7 +36,7 @@ export function ScenarioSection() {
               >
                 <div
                   className={cn(
-                    "order-1 flex w-full flex-col items-end text-right lg:min-w-0 lg:flex-1 lg:[direction:rtl]",
+                    "order-1 flex w-full flex-col  items-start text-right lg:min-w-0 lg:flex-1 lg:[direction:rtl]",
                     imageFirstOnDesktop ? "lg:order-2" : "lg:order-1",
                   )}
                 >

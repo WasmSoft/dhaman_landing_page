@@ -15,7 +15,7 @@ export default function HomePage() {
       <ScenarioSection />
       <SecuritySection />
       <FaqSection />
-      <FooterSection />
+      <FooterSection />   
     </main>
   );
 }
