@@ -9,6 +9,9 @@ const eslintConfig = defineConfig([
   globalIgnores([
     // Default ignores of eslint-config-next:
     ".next/**",
+    // AR: تجاهل ملفات OpenNext المولدة حتى لا يفحص ESLint مخرجات النشر.
+    // EN: Ignore generated OpenNext files so ESLint does not scan deploy output.
+    ".open-next/**",
     "out/**",
     "build/**",
     "next-env.d.ts",
