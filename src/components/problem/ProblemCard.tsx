@@ -38,7 +38,7 @@ export function ProblemCard({ card }: ProblemCardProps) {
         <div className="flex min-w-0 flex-1 flex-col items-start gap-[7px]">
           <span className="text-xs font-medium uppercase leading-3 tracking-wider text-[#928ea1]">
             مشكلة {card.number}
-          </span>
+           </span>
 
           <h3 className="text-2xl font-bold leading-[1.4] text-[#e5e0ee]">
             {card.title}
