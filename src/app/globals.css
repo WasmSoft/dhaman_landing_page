@@ -49,7 +49,7 @@
 }
 
 :root {
-  --font-sans: var(--font-arabic), Arial, sans-serif;
+  --font-sans: var(--font-tajawal), Arial, sans-serif;
   --background: #030518;
   --foreground: #f3eefb;
   --card: #211f29;
@@ -90,7 +90,7 @@
 }
 
 .dark {
-  --font-sans: var(--font-arabic), Arial, sans-serif;
+  --font-sans: var(--font-tajawal), Arial, sans-serif;
   --background: #030518;
   --foreground: #f3eefb;
   --card: #211f29;
