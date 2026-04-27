@@ -1,5 +1,10 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
+  // AR: شغّل بناء OpenNext قبل أي wrangler deploy حتى تتولد ملفات .open-next المطلوبة.
+  // EN: Run the OpenNext build before any wrangler deploy so the required .open-next artifacts exist.
+  "build": {
+    "command": "npm run build"
+  },
   "main": ".open-next/worker.js",
   "name": "my-app",
   // Set this to today's date
