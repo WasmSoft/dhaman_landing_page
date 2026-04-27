@@ -63,11 +63,11 @@ function SecurityOrbitNode({ node }: SecurityOrbitNodeProps) {
   return (
     <div
       className={cn(
-        "absolute flex -translate-x-1/2 flex-col items-center gap-2",
+        "absolute flex  -translate-x-1/4 md:translate-x-1/2 md:translate-y-1/3 lg:-translate-x-1/2 flex-col items-center gap-2",
         nodePositions[node.id],
       )}
     >
-      <div className="relative flex size-14 items-center justify-center rounded-2xl border border-white/20 bg-[#201f28]/60 p-px shadow-[0_8px_16px_rgb(109_93_252_/_0.2)] backdrop-blur-md sm:size-16 lg:size-20 lg:rounded-[24px]">
+      <div className="relative flex size-10 md:size-14 items-center justify-center rounded-2xl border border-white/20 bg-[#201f28]/60 p-px shadow-[0_8px_16px_rgb(109_93_252_/_0.2)] backdrop-blur-md sm:size-16 lg:size-20 lg:rounded-[24px]">
         <span className="absolute -right-2 -top-2 flex size-6 items-center justify-center rounded-full border border-[#e4dfff]/20 bg-[#35343e] text-[10px] font-medium leading-none tracking-[0.02em] text-[#e4dfff]/90 shadow-sm lg:-right-3 lg:-top-3 lg:size-7 lg:text-xs">
           {node.number}
         </span>
@@ -76,11 +76,11 @@ function SecurityOrbitNode({ node }: SecurityOrbitNodeProps) {
           alt=""
           width={33}
           height={33}
-          className="size-7 object-contain lg:size-[33px]"
+          className=" object-contain size-6 lg:size-8.5"
         />
       </div>
 
-      <span className="whitespace-nowrap text-center text-sm font-medium leading-6 text-[#e5e0ee] lg:text-base">
+      <span className="whitespace-nowrap text-center text-xs md:text-sm font-medium leading-6 text-[#e5e0ee] lg:text-base">
         {node.label}
       </span>
     </div>

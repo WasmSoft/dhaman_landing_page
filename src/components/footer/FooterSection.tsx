@@ -10,7 +10,11 @@ export function FooterSection() {
       <footer className="relative z-10 border-t border-white/5 bg-[#020617] pt-px text-right shadow-[0_-10px_20px_rgb(0_0_0_/_0.5)]">
         <div className="mx-auto w-full max-w-[1280px] px-8 py-16">
           <div className="grid gap-8 border-b border-white/10 pb-8 lg:grid-cols-4 lg:gap-12">
+<<<<<<< HEAD
             <div className="flex flex-col it gap-2 lg:col-start-4">
+=======
+            <div className="flex flex-col items-start gap-2 lg:col-start-4">
+>>>>>>> ed0485e62d6cbe467c77945490adc2b9f1544797
               <p className="text-[30px] font-black leading-9 tracking-[-0.025em] text-[#f8fafc]">
                 {footerContent.brand.name}
               </p>
@@ -24,7 +28,7 @@ export function FooterSection() {
 
             <nav
               aria-label="روابط تذييل الصفحة"
-              className="grid grid-cols-2 gap-x-6 gap-y-8 lg:col-span-3 lg:col-start-1 lg:row-start-1 lg:grid-cols-3"
+              className="hello grid grid-cols-2 gap-x-6 gap-y-8 lg:col-span-3 lg:col-start-1 lg:row-start-1 lg:grid-cols-3"
             >
               {footerContent.columns.map((column) => (
                 <div key={column.title} className="flex flex-col items-start gap-6">
