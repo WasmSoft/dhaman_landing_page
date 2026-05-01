@@ -1,12 +1,22 @@
+"use client";
+
+import { useRef } from "react";
+
 import { solutionContent } from "@/constants";
+import { useAutoSectionReveal } from "@/lib/scroll";
 
 import { SolutionStepCard } from "./SolutionStepCard";
 
 // AR: هذا القسم يحوّل رحلة الاتفاق إلى مخطط خطوات واضح ومتجاوب من الجوال إلى سطح المكتب.
 // EN: This section turns the agreement journey into a clear responsive step flow from mobile to desktop.
 export function SolutionSection() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+
+  useAutoSectionReveal(sectionRef);
+
   return (
     <section
+      ref={sectionRef}
       id="solution"
       dir="rtl"
       className="relative isolate overflow-hidden bg-[#070812] px-6 py-16 text-[#e5e0ee] md:px-8"

@@ -1,15 +1,9 @@
+"use client";
+
 import Image from "next/image";
 
-import { cn } from "@/lib/utils";
-import type { SecurityNode, SecurityNodeId } from "@/types";
-
-const nodePositions: Record<SecurityNodeId, string> = {
-  "secure-link": "left-[62%] top-[3%] lg:left-[65%] lg:top-[3%]",
-  "clear-record": "left-[4%] top-[21%] lg:left-[9.5%] lg:top-[23%]",
-  "visible-policies": "left-[13%] top-[70%] lg:left-[18%] lg:top-[73%]",
-  "payment-status": "left-[66%] top-[74%] lg:left-[70%] lg:top-[78%]",
-  "ai-review": "left-[76%] top-[34%] lg:left-[85%] lg:top-[38%]",
-};
+import { useSecurityOrbitAnimation } from "@/lib/security";
+import type { SecurityNode } from "@/types";
 
 type SecurityOrbitProps = {
   coreImage: string;
@@ -22,8 +16,12 @@ export function SecurityOrbit({
   coreImageAlt,
   nodes,
 }: SecurityOrbitProps) {
+  const orbitRef = useSecurityOrbitAnimation({ nodes });
+
   return (
-    <div className="relative aspect-square w-full max-w-[800px]">
+    // AR: هذا المدار يبني دوائر الحماية المتداخلة ويضع كل نقطة على نصف قطر محسوب لتدور بسلاسة حول المركز.
+    // EN: This orbit builds the nested protection rings and places each node on a computed radius so it can orbit smoothly around the center.
+    <div ref={orbitRef} className="relative aspect-square w-full max-w-[800px]">
       <div
         aria-hidden="true"
         className="absolute inset-[10%] rounded-full border border-[#e4dfff]/10 shadow-[inset_0_0_50px_1px_rgb(109_93_252_/_0.05)]"
@@ -62,27 +60,37 @@ type SecurityOrbitNodeProps = {
 function SecurityOrbitNode({ node }: SecurityOrbitNodeProps) {
   return (
     <div
-      className={cn(
-        "absolute flex  -translate-x-1/4 md:translate-x-1/2 md:translate-y-1/3 lg:-translate-x-1/2 flex-col items-center gap-2",
-        nodePositions[node.id],
-      )}
+      data-orbit-node={node.id}
+      className="orbit-node pointer-events-none absolute flex items-start justify-center"
+      style={{ inset: node.orbitInset, rotate: `${node.startAngle}deg` }}
     >
-      <div className="relative flex size-10 md:size-14 items-center justify-center rounded-2xl border border-white/20 bg-[#201f28]/60 p-px shadow-[0_8px_16px_rgb(109_93_252_/_0.2)] backdrop-blur-md sm:size-16 lg:size-20 lg:rounded-[24px]">
-        <span className="absolute -right-2 -top-2 flex size-6 items-center justify-center rounded-full border border-[#e4dfff]/20 bg-[#35343e] text-[10px] font-medium leading-none tracking-[0.02em] text-[#e4dfff]/90 shadow-sm lg:-right-3 lg:-top-3 lg:size-7 lg:text-xs">
-          {node.number}
-        </span>
-        <Image
-          src={node.icon}
-          alt=""
-          width={33}
-          height={33}
-          className=" object-contain size-6 lg:size-8.5"
-        />
-      </div>
+      <div className="orbit-anchor relative -translate-y-1/2">
+        <div className="orbit-card flex flex-col items-center gap-2">
+          <div
+            data-orbit-shell
+            className="relative flex size-10 items-center justify-center rounded-2xl border border-white/20 bg-[#201f28]/60 p-px shadow-[0_8px_16px_rgb(109_93_252_/_0.2)] backdrop-blur-md sm:size-16 md:size-14 lg:size-20 lg:rounded-[24px]"
+          >
+            <span className="absolute -right-2 -top-2 flex size-6 items-center justify-center rounded-full border border-[#e4dfff]/20 bg-[#35343e] text-[10px] font-medium leading-none tracking-[0.02em] text-[#e4dfff]/90 shadow-sm lg:-right-3 lg:-top-3 lg:size-7 lg:text-xs">
+              {node.number}
+            </span>
+            <Image
+              data-orbit-icon
+              src={node.icon}
+              alt=""
+              width={33}
+              height={33}
+              className="size-6 object-contain lg:size-8.5"
+            />
+          </div>
 
-      <span className="whitespace-nowrap text-center text-xs md:text-sm font-medium leading-6 text-[#e5e0ee] lg:text-base">
-        {node.label}
-      </span>
+          <span
+            data-orbit-label
+            className="whitespace-nowrap text-center text-xs font-medium leading-6 text-[#e5e0ee] md:text-sm lg:text-base"
+          >
+            {node.label}
+          </span>
+        </div>
+      </div>
     </div>
   );
 }

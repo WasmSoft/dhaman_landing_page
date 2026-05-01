@@ -10,6 +10,10 @@ export type SecurityNode = {
   number: string;
   label: string;
   icon: string;
+  orbitInset: string;
+  orbitDuration: number;
+  orbitDirection: 1 | -1;
+  startAngle: number;
 };
 
 export type SecurityContent = {

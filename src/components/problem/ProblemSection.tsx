@@ -1,12 +1,22 @@
+"use client";
+
+import { useRef } from "react";
+
 import { problemContent } from "@/constants";
+import { useProblemCardFlip } from "@/lib/scroll";
 
 import { ProblemCard } from "./ProblemCard";
 
 // AR: يعرض هذا القسم أسباب تعثر اتفاقات العمل الحر بتسلسل قصصي مطابق لتصميم فيجما.
 // EN: This section presents why freelance agreements fail using the storytelling sequence from Figma.
 export function ProblemSection() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+
+  useProblemCardFlip(sectionRef);
+
   return (
     <section
+      ref={sectionRef}
       id="problem"
       dir="rtl"
       className="relative isolate overflow-hidden bg-[#070812] px-8 py-16 text-[#e5e0ee]"
@@ -32,7 +42,7 @@ export function ProblemSection() {
           </p>
         </header>
 
-        <div className="flex w-full flex-col items-center gap-[50px] pb-16 lg:gap-[25px] lg:pb-14">
+        <div className="problem-card-stage flex w-full flex-col items-center gap-[50px] pb-16 [perspective:1400px] [transform-style:preserve-3d] lg:gap-[25px] lg:pb-14">
           {problemContent.cards.map((card) => (
             <ProblemCard key={card.number} card={card} />
           ))}

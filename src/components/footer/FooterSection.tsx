@@ -1,10 +1,24 @@
+"use client";
+
+import { useRef } from "react";
+
 import { footerContent } from "@/constants";
+import { useAutoSectionReveal } from "@/lib/scroll";
 
 import { FinalCtaCard } from "./FinalCtaCard";
 
+// AR: هذا القسم يجمع دعوة الإجراء النهائية وروابط التذييل مع أنيميشن دخول تلقائي يبرز العناصر الأهم بصريًا داخل كل مجموعة.
+// EN: This section combines the final CTA and footer links with automatic reveal animation that prioritizes the most visually important elements in each group.
 export function FooterSection() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+
+  useAutoSectionReveal(sectionRef, { start: "top 85%" });
+
   return (
-    <div className="isolate flex flex-col bg-[#070812] pt-0 lg:pt-[124px]">
+    <section
+      ref={sectionRef}
+      className="isolate flex flex-col bg-[#070812] pt-0 lg:pt-[124px]"
+    >
       <FinalCtaCard cta={footerContent.cta} />
 
       <footer className="relative z-10 border-t border-white/5 bg-[#020617] pt-px text-right shadow-[0_-10px_20px_rgb(0_0_0_/_0.5)]">
@@ -70,6 +84,6 @@ export function FooterSection() {
           </div>
         </div>
       </footer>
-    </div>
+    </section>
   );
 }
