@@ -8,11 +8,11 @@ export const footerContent: FooterContent = {
       "أنشئ اتفاق دفع واضح، قسّم المشروع إلى مراحل، واترك ضمان يساعد الطرفين على متابعة التسليمات والدفعات بوضوح.",
     primaryAction: {
       label: "ابدأ التجربة",
-      href: "#start",
+      href: "https://panel.dhaman.wasmsoft.com/",
     },
     secondaryAction: {
       label: "شاهد كيف يعمل",
-      href: "#how-it-works",
+      href: "https://panel.dhaman.wasmsoft.com/",
     },
   },
   brand: {
@@ -25,8 +25,8 @@ export const footerContent: FooterContent = {
     {
       title: "المنتج",
       links: [
-        { label: "المميزات", href: "#features" },
-        { label: "كيف يعمل", href: "#how-it-works" },
+        { label: "المميزات", href: "#scenario" },
+        { label: "كيف يعمل", href: "#scenario" },
         { label: "سيناريو عملي", href: "#scenario" },
         { label: "الأسئلة الشائعة", href: "#faq" },
       ],
@@ -51,7 +51,7 @@ export const footerContent: FooterContent = {
     },
   ],
   copyright:
-    "© 2026 Dhaman. جميع الحقوق محفوظة. مدعوم بالذكاء الاصطناعي.",
+    "© 2026 Dhaman. جميع الحقوق محفوظة.",
   bottomLinks: [
     { label: "الشروط والأحكام", href: "#terms" },
     { label: "سياسة الخصوصية", href: "#privacy" },

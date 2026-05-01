@@ -7,8 +7,8 @@ export const heroContent: HeroContent = {
   description:
     "منصة متكاملة تنظم العلاقة بين العميل والمستقل عبر اتفاقات واضحة، دفعات على مراحل، تتبع للتسليمات، وسياسات مراجعة مدعومة بالذكاء الاصطناعي لحماية حقوق الطرفين.",
   navItems: [
-    { label: "المميزات", href: "#features", isActive: true },
-    { label: "كيف يعمل", href: "#how-it-works" },
+    { label: "المميزات", href: "#security", isActive: true },
+    { label: "كيف يعمل", href: "#solution" },
     { label: "التسعير", href: "#pricing" },
     { label: "الأسئلة الشائعة", href: "#faq" },
   ],
