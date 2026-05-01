@@ -368,10 +368,16 @@ Navigate into the project directory:
 cd dhaman_landing_page
 ```
 
-Install dependencies:
+Install project dependencies:
 
 ```bash
 npm install
+```
+
+Install animation and smooth scrolling dependencies:
+
+```bash
+npm install gsap @gsap/react lenis
 ```
 
 Create your environment file:
