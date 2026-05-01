@@ -14,11 +14,11 @@ export const heroContent: HeroContent = {
   ],
   headerAction: {
     label: "ابدأ الآن",
-    href: "#start",
+    href: "https://panel.dhaman.wasmsoft.com/",
   },
   primaryAction: {
     label: "ابدأ التجربة",
-    href: "#start",
+    href: "https://panel.dhaman.wasmsoft.com/",
   },
   dashboard: {
     title: "لوحة التحكم النشطة",

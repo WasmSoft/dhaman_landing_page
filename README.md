@@ -1,12 +1,50 @@
-## Dhaman Landing Page
+<div align="center">
 
-A professional public-facing landing page for **Dhaman**, a fintech MVP designed to protect freelance payments through structured agreements, milestone-based payment contracts, protected payment flows, client tracking portals, and AI-powered dispute review.
+# 🌐 Dhaman Landing Page
 
-Dhaman helps freelancers and clients move from informal agreements and payment uncertainty into a clear, transparent, and trackable payment protection experience.
+### Public Product Landing Page — Structured Payment Protection for Freelance Work
 
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-4-18181B?logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
+[![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?logo=greensock&logoColor=white)](https://gsap.com/)
+[![Cloudflare](https://img.shields.io/badge/Cloudflare_Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
+[![Lucide](https://img.shields.io/badge/Lucide-Icons-FF6B6B?logo=lucide&logoColor=white)](https://lucide.dev/)
+[![License](https://img.shields.io/badge/License-Private-red)]()
 
-> **Core Principle:**  
+</div>
+
+---
+
+> **Core Principle:**
 > Dhaman creates balanced financial protection between clients and freelancers: clients pay with confidence, and freelancers work with secured payment assurance.
+
+---
+
+## 📚 Table of Contents
+
+- [🚧 Current Project Status](#-current-project-status)
+- [🧾 Overview](#-overview)
+- [🎯 Project Purpose](#-project-purpose)
+- [💡 Product Concept](#-product-concept)
+- [✨ Main Features](#-main-features)
+- [🔁 System Flow](#-system-flow)
+- [🧩 Landing Page Sections](#-landing-page-sections)
+- [🛠️ Technology Stack](#-technology-stack)
+- [📂 Project Structure](#-project-structure)
+- [🔑 Key Files](#-key-files)
+- [🔐 Environment Variables](#-environment-variables)
+- [🚀 Getting Started](#-getting-started)
+- [📜 Available Scripts](#-available-scripts)
+- [🔌 API Integration](#-api-integration)
+- [🧪 Current Functional Status](#-current-functional-status)
+- [🚢 Deployment](#-deployment)
+- [🗺️ Roadmap](#-roadmap)
+- [🔗 Related Repositories](#-related-repositories)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
@@ -30,32 +68,10 @@ However, the backend API already exposes the full system capabilities through Sw
 
 You can explore and test all available backend routes here:
 
-**Swagger API Documentation:**  
+**Swagger API Documentation:**
 https://backend.dhaman.wasmsoft.com/docs
 
 From Swagger, you can see all routes, modules, request bodies, responses, and test the available backend functionality directly.
-
----
-
-## 📚 Table of Contents
-
-- [Overview](#overview)
-- [Project Purpose](#project-purpose)
-- [Product Concept](#product-concept)
-- [Main Features](#main-features)
-- [System Flow](#system-flow)
-- [Landing Page Sections](#landing-page-sections)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Available Scripts](#available-scripts)
-- [API Integration](#api-integration)
-- [Deployment](#deployment)
-- [Roadmap](#roadmap)
-- [Related Repositories](#related-repositories)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -105,7 +121,7 @@ The main product logic is:
 
 ```text
 Agreement → Milestones → Protected Payments → Delivery → Review → Release or Hold
-````
+```
 
 This gives both sides a safer and clearer way to manage freelance payments.
 
@@ -152,15 +168,15 @@ The page is designed to be suitable for hackathons, product demos, investor pres
 The complete Dhaman MVP flow can be summarized as:
 
 ```text
-1. Freelancer creates an agreement
-2. Freelancer defines project milestones
-3. Client receives an invitation link
-4. Client reviews and approves the agreement
-5. Agreement becomes active
-6. Freelancer submits milestone delivery
-7. Client accepts, requests changes, or opens a dispute
-8. AI reviews the dispute based on agreement conditions
-9. Payment becomes ready to release, released, or placed on hold
+1.  Freelancer creates an agreement
+2.  Freelancer defines project milestones
+3.  Client receives an invitation link
+4.  Client reviews and approves the agreement
+5.  Agreement becomes active
+6.  Freelancer submits milestone delivery
+7.  Client accepts, requests changes, or opens a dispute
+8.  AI reviews the dispute based on agreement conditions
+9.  Payment becomes ready to release, released, or placed on hold
 10. All important actions are recorded in the project timeline
 ```
 
@@ -169,8 +185,6 @@ The landing page explains this flow visually and conceptually for users before t
 ---
 
 ## 🧩 Landing Page Sections
-
-The landing page is designed around the following product sections:
 
 ### Hero Section
 
@@ -182,12 +196,12 @@ The hero communicates that Dhaman protects freelance payments by making agreemen
 
 Explains the common issues in freelance work:
 
-* Unclear agreements
-* Delayed payments
-* Scope creep
-* Trust issues
-* Informal communication
-* No reliable proof during disputes
+- Unclear agreements
+- Delayed payments
+- Scope creep
+- Trust issues
+- Informal communication
+- No reliable proof during disputes
 
 ### Solution Section
 
@@ -205,12 +219,12 @@ Create Agreement → Track Milestones → Review Delivery → Release Payment Sa
 
 Highlights the most important platform capabilities:
 
-* Agreement builder
-* Milestone payments
-* Client portal
-* Protected payment flow
-* AI review
-* Timeline evidence
+- Agreement builder
+- Milestone payments
+- Client portal
+- Protected payment flow
+- AI review
+- Timeline evidence
 
 ### Demo Scenario
 
@@ -230,22 +244,27 @@ Encourages users to start using the platform or access the dashboard.
 
 ## 🛠️ Technology Stack
 
-This repository is focused on the landing page frontend.
-
 ### Frontend
 
-* Next.js
-* React
-* TypeScript
-* Tailwind CSS
+| Technology          | Purpose                                  |
+| ------------------- | ---------------------------------------- |
+| Next.js 16          | React framework with App Router          |
+| React 19            | UI library                               |
+| TypeScript          | Type-safe development                    |
+| Tailwind CSS 4      | Utility-first CSS styling                |
+| shadcn/ui           | Accessible component system              |
+| Radix UI            | Headless UI primitives                   |
+| Lucide React        | Icon library                             |
+| GSAP                | Scroll animations and motion effects     |
+| Lenis               | Smooth scroll library                    |
 
-### UI / UX
+### Deployment & Hosting
 
-* Responsive layout
-* Modern landing page design
-* Smooth animations
-* Clean product storytelling
-* Conversion-focused sections
+| Technology          | Purpose                                  |
+| ------------------- | ---------------------------------------- |
+| Cloudflare Workers  | Edge deployment platform                 |
+| OpenNext Cloudflare | Next.js adapter for Cloudflare           |
+| Wrangler            | Cloudflare CLI for deployment            |
 
 ### Backend Integration
 
@@ -261,13 +280,8 @@ https://backend.dhaman.wasmsoft.com/docs
 
 ## 📂 Project Structure
 
-The project structure follows a typical Next.js application format:
-
-
 ```text
 dhaman_landing_page/
-├── .agents/skills/          # AI-agent skills or project automation instructions
-├── .cursor/                 # Cursor editor configuration and project rules
 ├── public/                  # Static assets such as images, icons, logos, and public files
 ├── src/                     # Main application source code
 │   ├── app/                 # Next.js App Router pages, layouts, metadata, and route-level structure
@@ -275,24 +289,58 @@ dhaman_landing_page/
 │   ├── constants/           # Shared constants, content data, routes, and static configuration
 │   ├── lib/                 # Utility functions, helpers, formatters, and shared frontend logic
 │   └── types/               # Shared TypeScript types and interfaces
+├── .agents/                 # AI-agent skills or project automation instructions
+├── .cursor/                 # Cursor editor configuration and project rules
 ├── .codex                   # Codex-related configuration or project notes
-├── .gitignore               # Git ignored files and folders
 ├── .nvmrc                   # Node.js version configuration for consistent local development
 ├── AGENTS.md                # Agent instructions or project collaboration notes
 ├── CLAUDE.md                # Claude-related project instructions or development notes
-├── README.md                # Project documentation
 ├── components.json          # Component/UI configuration, commonly used with shadcn/ui
 ├── eslint.config.mjs        # ESLint configuration for code quality and consistency
-├── next.config.ts           # Next.js configuration
-├── open-next.config.ts      # OpenNext configuration for deployment targets such as Cloudflare
-├── opencode.json            # OpenCode configuration
-├── package-lock.json        # Locked npm dependency versions
-├── package.json             # Project dependencies, metadata, and available scripts
-├── postcss.config.mjs       # PostCSS configuration, commonly used with Tailwind CSS
-├── skills-lock.json         # Lock file for agent skills or automation-related configuration
-├── tsconfig.json            # TypeScript compiler configuration
-└── wrangler.jsonc           # Cloudflare Workers/Pages deployment configuration
+├── next.config.ts            # Next.js configuration
+├── open-next.config.ts       # OpenNext configuration for deployment targets such as Cloudflare
+├── opencode.json             # OpenCode configuration
+├── package.json              # Dependencies, metadata, and available scripts
+├── postcss.config.mjs        # PostCSS configuration, commonly used with Tailwind CSS
+├── tsconfig.json             # TypeScript compiler configuration
+└── wrangler.jsonc            # Cloudflare Workers/Pages deployment configuration
 ```
+
+---
+
+## 🔑 Key Files
+
+| File                       | Purpose                                              |
+| -------------------------- | ---------------------------------------------------- |
+| `src/app/layout.tsx`       | Root layout with metadata and global structure        |
+| `src/app/page.tsx`         | Landing page entry point                             |
+| `src/components/`          | Reusable UI components and landing page sections     |
+| `src/constants/`           | Static content, routes, and configuration data        |
+| `src/lib/`                 | Utility functions, helpers, and shared logic          |
+| `src/types/`               | TypeScript type definitions                           |
+| `next.config.ts`           | Next.js configuration                                |
+| `open-next.config.ts`      | OpenNext Cloudflare adapter configuration             |
+| `wrangler.jsonc`            | Cloudflare Workers deployment configuration            |
+| `components.json`           | shadcn/ui component configuration                     |
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env.local` file in the root directory and configure the required environment variables.
+
+```env
+# Application
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+
+# Backend API
+NEXT_PUBLIC_API_URL="https://backend.dhaman.wasmsoft.com"
+
+# API Documentation
+NEXT_PUBLIC_SWAGGER_URL="https://backend.dhaman.wasmsoft.com/docs"
+```
+
+> Depending on the current frontend integration, additional variables may be added later.
 
 ---
 
@@ -302,11 +350,9 @@ dhaman_landing_page/
 
 Make sure you have the following installed:
 
-* Node.js 18+
-* npm, yarn, pnpm, or bun
-* Git
-
----
+- **Node.js** 20+ (see `.nvmrc` for the recommended version)
+- **npm**, yarn, pnpm, or bun
+- **Git**
 
 ### Installation
 
@@ -348,47 +394,18 @@ http://localhost:3000
 
 ---
 
-## 🔐 Environment Variables
-
-Create a `.env.local` file in the root directory and configure the required environment variables.
-
-Example:
-
-```env
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-NEXT_PUBLIC_API_URL="https://backend.dhaman.wasmsoft.com"
-NEXT_PUBLIC_SWAGGER_URL="https://backend.dhaman.wasmsoft.com/docs"
-```
-
-Depending on the current frontend integration, additional variables may be added later.
-
----
-
 ## 📜 Available Scripts
 
-### Start Development Server
-
-```bash
-npm run dev
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-### Start Production Server
-
-```bash
-npm run start
-```
-
-### Run Linting
-
-```bash
-npm run lint
-```
+| Command                | Description                                  |
+| ---------------------- | -------------------------------------------- |
+| `npm run dev`          | Start development server                      |
+| `npm run next:build`   | Build Next.js only                            |
+| `npm run build`        | Full build (Next.js + Cloudflare adapter)     |
+| `npm run start`        | Start production server                      |
+| `npm run lint`         | Run ESLint                                   |
+| `npm run preview`      | Build and preview Cloudflare deployment locally |
+| `npm run deploy`       | Build and deploy to Cloudflare Workers        |
+| `npm run cf:deploy`    | Deploy to Cloudflare Workers                  |
 
 ---
 
@@ -396,12 +413,12 @@ npm run lint
 
 The landing page is part of a larger Dhaman system that includes:
 
-* Freelancer dashboard
-* Client portal
-* NestJS backend
-* PostgreSQL database
-* AI review module
-* Email invitation system
+- Freelancer dashboard
+- Client portal
+- NestJS backend
+- PostgreSQL database
+- AI review module
+- Email invitation system
 
 Some frontend-backend integrations may still be in progress.
 
@@ -413,43 +430,40 @@ https://backend.dhaman.wasmsoft.com/docs
 
 Swagger allows you to:
 
-* View all available API routes
-* Test authentication endpoints
-* Create agreements
-* Create milestones
-* Send client invitations
-* Explore portal-related routes
-* Test payment and delivery workflows
-* Review backend request and response structures
+- View all available API routes
+- Test authentication endpoints
+- Create agreements and milestones
+- Send client invitations
+- Explore portal-related routes
+- Test payment and delivery workflows
+- Review backend request and response structures
 
 ---
 
 ## 🧪 Current Functional Status
 
-### Ready
+### ✅ Ready
 
-* Landing page UI
-* Product explanation sections
-* Dashboard access flow
-* Freelancer login flow
-* Agreement creation flow
-* Milestone creation flow
-* Client invite flow
-* Backend Swagger documentation
-* Core backend APIs
+- Landing page UI
+- Product explanation sections
+- Dashboard access flow
+- Freelancer login flow
+- Agreement creation flow
+- Milestone creation flow
+- Client invite flow
+- Backend Swagger documentation
+- Core backend APIs
 
-### Partially Integrated
+### 🔄 Partially Integrated
 
-* Some secondary frontend actions
-* Some dashboard-to-backend module integrations
-* Some advanced workflow screens
-* Some AI review and payment-related UI flows
+- Some secondary frontend actions
+- Some dashboard-to-backend module integrations
+- Some advanced workflow screens
+- Some AI review and payment-related UI flows
 
-### Testable Through Swagger
+### 📡 Testable Through Swagger
 
 Even if a frontend screen is not fully connected yet, the backend route may already be available and testable through Swagger.
-
-Use:
 
 ```text
 https://backend.dhaman.wasmsoft.com/docs
@@ -461,10 +475,11 @@ https://backend.dhaman.wasmsoft.com/docs
 
 The project can be deployed to platforms such as:
 
-* Vercel
-* Netlify
-* Render
-* Any Node.js-compatible hosting provider
+- **Vercel**
+- **Netlify**
+- **Cloudflare Workers/Pages**
+- **Render**
+- Any Node.js-compatible hosting provider
 
 ### Production Build
 
@@ -472,13 +487,17 @@ The project can be deployed to platforms such as:
 npm run build
 ```
 
-### Production Start
+### Cloudflare Deployment
+
+The project includes OpenNext Cloudflare adapter configuration for edge deployment:
 
 ```bash
-npm run start
+npm run deploy
 ```
 
-For Vercel deployment, connect the GitHub repository and configure the required environment variables in the Vercel dashboard.
+### Vercel Deployment
+
+Connect the GitHub repository and configure the required environment variables in the Vercel dashboard.
 
 ---
 
@@ -486,15 +505,15 @@ For Vercel deployment, connect the GitHub repository and configure the required 
 
 Planned improvements may include:
 
-* Full frontend-backend integration for all modules
-* Improved landing page animations
-* More demo scenarios
-* Public pricing or waitlist section
-* Better mobile responsiveness
-* Multi-language support
-* More polished product visuals
-* Live dashboard demo link
-* Full integration with production backend APIs
+- Full frontend-backend integration for all modules
+- Improved landing page animations
+- More demo scenarios
+- Public pricing or waitlist section
+- Better mobile responsiveness
+- Multi-language support
+- More polished product visuals
+- Live dashboard demo link
+- Full integration with production backend APIs
 
 ---
 
@@ -502,11 +521,11 @@ Planned improvements may include:
 
 Dhaman is organized into multiple repositories:
 
-```text
-dhaman_landing_page   # Public product landing page
-dhaman_dashboard      # Freelancer dashboard and client portal frontend
-dhaman_backend        # NestJS backend API with Prisma and PostgreSQL
-```
+| Repository              | Description                                              |
+| ----------------------- | -------------------------------------------------------- |
+| `dhaman_landing_page`  | Public product landing page                             |
+| `dhaman_dashboard`     | Freelancer dashboard and client portal frontend          |
+| `dhaman_backend`        | NestJS backend API with Prisma and PostgreSQL            |
 
 ---
 
@@ -516,13 +535,13 @@ Contributions are welcome.
 
 Recommended contribution areas:
 
-* UI/UX improvements
-* Landing page copywriting
-* Responsive design enhancements
-* Animation improvements
-* Component refactoring
-* Frontend-backend integration
-* Accessibility improvements
+- UI/UX improvements
+- Landing page copywriting
+- Responsive design enhancements
+- Animation improvements
+- Component refactoring
+- Frontend-backend integration
+- Accessibility improvements
 
 ### Contribution Flow
 
@@ -556,15 +575,8 @@ License details can be added based on the final project decision.
 
 ---
 
-## 👥 Team Note
+<div align="center">
 
-Dhaman is being developed as an MVP to demonstrate a focused fintech concept:
+**Dhaman Landing Page** — *A financial protection layer for freelance payments.*
 
-```text
-A financial protection layer for freelance payments.
-```
-
-The goal of this landing page is to communicate the product clearly, build trust, and guide users toward the dashboard and client portal experience.
-
-```
-```
+</div>
