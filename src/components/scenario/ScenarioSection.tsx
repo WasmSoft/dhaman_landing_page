@@ -1,15 +1,27 @@
+"use client";
+
+import { useRef } from "react";
+
 import { scenarioContent } from "@/constants";
+import { useAutoSectionReveal } from "@/lib/scroll-animation";
 import { cn } from "@/lib/utils";
 
 import { ScenarioVisual } from "./ScenarioVisual";
 
 export function ScenarioSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useAutoSectionReveal({ sectionRef, start: "top 82%" });
+
   return (
     <section
+      ref={sectionRef}
       id="scenario"
       dir="rtl"
       className="relative isolate overflow-hidden bg-[#070812] px-4 py-16 text-[#e5e0ee] md:px-8"
     >
+      {/* AR: هذا القسم يشرح السيناريو خطوة بخطوة مع حركة دخول تجمع النص والصورة لكل خطوة لقراءة أكثر سلاسة.
+      EN: This section explains the scenario step by step with grouped reveal motion that keeps each step’s copy and visual entering together. */}
       <div className="mx-auto flex w-full max-w-[1216px] flex-col items-center gap-16">
         <header className="flex w-full max-w-[768px] flex-col items-center gap-[15px] text-center">
           <span className="inline-flex items-center justify-center rounded-full border border-[#474555]/30 bg-[#2a2933] px-[17px] py-[5px] text-xs font-medium leading-3 tracking-[0.02em] text-[#6d5dfc]">
