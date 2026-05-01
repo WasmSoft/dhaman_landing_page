@@ -4,8 +4,9 @@ A professional public-facing landing page for **Dhaman**, a fintech MVP designed
 
 Dhaman helps freelancers and clients move from informal agreements and payment uncertainty into a clear, transparent, and trackable payment protection experience.
 
-**Core idea:**  
-The client does not pay without protection, and the freelancer does not work without protection.
+
+> **Core Principle:**  
+> Dhaman creates balanced financial protection between clients and freelancers: clients pay with confidence, and freelancers work with secured payment assurance.
 
 ---
 
