@@ -504,7 +504,7 @@ dhaman_backend        # NestJS backend API with Prisma and PostgreSQL
 
 Contributions are welcome.
 
-Recommended contribution areas:
+Recommended contribution areas :
 
 * UI/UX improvements
 * Landing page copywriting
