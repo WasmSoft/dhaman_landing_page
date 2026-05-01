@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_Arabic, Tajawal } from "next/font/google";
+
+import { SmoothScrollProvider } from "@/components/shared/smooth-scroll";
+
 import "./globals.css";
 
 const notoSansArabic = Noto_Sans_Arabic({
@@ -31,7 +34,9 @@ export default function RootLayout({
       dir="rtl"
       className={`${notoSansArabic.variable} ${tajawal.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SmoothScrollProvider>{children}</SmoothScrollProvider>
+      </body>
     </html>
   );
 }

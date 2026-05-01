@@ -1,3 +1,4 @@
+export * from "./animation";
 export * from "./hero";
 export * from "./problem";
 export * from "./scenario";
