@@ -6,7 +6,7 @@
     "command": "npm run build"
   },
   "main": ".open-next/worker.js",
-  "name": "my-app",
+  "name": "dhaman",
   // Set this to today's date
   "compatibility_date": "2026-04-26",
   "compatibility_flags": [
