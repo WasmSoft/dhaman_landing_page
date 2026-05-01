@@ -97,9 +97,7 @@ The landing page presents this idea in a simple and professional way, showing ho
 
 ## 💡 Product Concept
 
-Dhaman is not a marketplace.
-
-It is a financial protection layer for freelance work.
+Dhaman is a financial protection layer for freelance work.
 
 The system helps freelancers and clients create clear agreements where every payment is connected to a milestone, acceptance criteria, delivery, review process, and timeline event.
 
