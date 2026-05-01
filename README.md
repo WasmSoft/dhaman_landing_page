@@ -263,21 +263,35 @@ https://backend.dhaman.wasmsoft.com/docs
 
 The project structure follows a typical Next.js application format:
 
+
 ```text
 dhaman_landing_page/
-├── public/                 # Static assets and images
-├── src/
-│   ├── app/                # Next.js App Router pages
-│   ├── components/         # Reusable UI components
-│   ├── sections/           # Landing page sections
-│   ├── lib/                # Utility functions and constants
-│   ├── styles/             # Global styles if used
-│   └── types/              # Shared TypeScript types if needed
-├── .env.example            # Example environment variables
-├── next.config.ts          # Next.js configuration
-├── package.json            # Project dependencies and scripts
-├── tailwind.config.ts      # Tailwind CSS configuration
-└── tsconfig.json           # TypeScript configuration
+├── .agents/skills/          # AI-agent skills or project automation instructions
+├── .cursor/                 # Cursor editor configuration and project rules
+├── public/                  # Static assets such as images, icons, logos, and public files
+├── src/                     # Main application source code
+│   ├── app/                 # Next.js App Router pages, layouts, metadata, and route-level structure
+│   ├── components/          # Reusable UI components and landing page sections
+│   ├── constants/           # Shared constants, content data, routes, and static configuration
+│   ├── lib/                 # Utility functions, helpers, formatters, and shared frontend logic
+│   └── types/               # Shared TypeScript types and interfaces
+├── .codex                   # Codex-related configuration or project notes
+├── .gitignore               # Git ignored files and folders
+├── .nvmrc                   # Node.js version configuration for consistent local development
+├── AGENTS.md                # Agent instructions or project collaboration notes
+├── CLAUDE.md                # Claude-related project instructions or development notes
+├── README.md                # Project documentation
+├── components.json          # Component/UI configuration, commonly used with shadcn/ui
+├── eslint.config.mjs        # ESLint configuration for code quality and consistency
+├── next.config.ts           # Next.js configuration
+├── open-next.config.ts      # OpenNext configuration for deployment targets such as Cloudflare
+├── opencode.json            # OpenCode configuration
+├── package-lock.json        # Locked npm dependency versions
+├── package.json             # Project dependencies, metadata, and available scripts
+├── postcss.config.mjs       # PostCSS configuration, commonly used with Tailwind CSS
+├── skills-lock.json         # Lock file for agent skills or automation-related configuration
+├── tsconfig.json            # TypeScript compiler configuration
+└── wrangler.jsonc           # Cloudflare Workers/Pages deployment configuration
 ```
 
 ---
