@@ -25,11 +25,14 @@ export function ProblemCard({ card }: ProblemCardProps) {
   return (
     <article
       className={cn(
-        "relative w-full max-w-[326px] overflow-hidden rounded-[32px] border border-white/10 bg-[#111426]/80 p-8 text-right shadow-[0_30px_60px_-15px_rgb(0_0_0_/_0.5)] backdrop-blur-lg transition-transform duration-300 lg:max-w-[896px] lg:p-[33px]",
+        "card relative w-full max-w-[326px] overflow-hidden rounded-[32px] border border-white/10 bg-[#111426]/80 p-8 text-right shadow-[0_30px_60px_-15px_rgb(0_0_0_/_0.5)] backdrop-blur-lg transition-transform duration-300 [backface-visibility:hidden] [transform-origin:center_bottom] [transform-style:preserve-3d] lg:max-w-[896px] lg:p-[33px]",
         card.rotation,
       )}
     >
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#6d5dfc]/20 to-transparent opacity-50 blur-xl" />
+      <div
+        data-card-glow
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#6d5dfc]/20 to-transparent opacity-50 blur-xl"
+      />
 
       {/* AR: يتم وضع الأيقونة في بداية البطاقة بصرياً كما في المرجع مع بقاء النص بمحاذاة يمين واضحة.
           EN: The icon is placed at the visual start of the card like the reference while keeping the text clearly right-aligned. */}
