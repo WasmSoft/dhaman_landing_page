@@ -1,5 +1,4 @@
-````markdown
-# Dhaman Landing Page
+## Dhaman Landing Page
 
 A professional public-facing landing page for **Dhaman**, a fintech MVP designed to protect freelance payments through structured agreements, milestone-based payment contracts, protected payment flows, client tracking portals, and AI-powered dispute review.
 
