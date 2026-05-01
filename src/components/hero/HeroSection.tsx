@@ -1,24 +1,15 @@
-"use client";
-
-import { useRef } from "react";
 import { ShieldCheck } from "lucide-react";
 
 import { Button } from "@/components/shared/button";
 import { heroContent } from "@/constants";
-import { useAutoSectionReveal } from "@/lib/scroll";
 import { cn } from "@/lib/utils";
 
 import { HeroActions } from "./HeroActions";
 import { HeroPreview } from "./HeroPreview";
 
 export function HeroSection() {
-  const sectionRef = useRef<HTMLElement | null>(null);
-
-  useAutoSectionReveal(sectionRef);
-
   return (
     <section
-      ref={sectionRef}
       id="hero"
       dir="rtl"
       className="relative isolate min-h-screen overflow-hidden bg-[#030518] px-4 pb-12 pt-5 text-[#f4f1ff] sm:px-8 lg:px-10"
